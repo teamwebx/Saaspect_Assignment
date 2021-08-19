@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="finalpage">
+        <div class="img"><img src="img.jpg" alt="not avalable" width="715px" height="600px" style="border-radius:30px;">
+        </div>
+
+
+
+        <p class="caption">Sign Up</p>
+
+        <form action="">
+            <div class="hide">
+                <label for="name">Name</label></br>
+                <input type="text" class="hide" /></br>
+            </div>
+            <label for="email">Email</label></br>
+            <input type="text" /></br>
+            <label for="password">Password</label></br>
+            <input type="text" /></br>
+            <div class="hide2">
+                <label for="password">Confirm Password</label></br>
+                <input type="text" />
+            </div>
+            <button class="button" type="submit">Sign Up</button>
+        </form>
+        <hr class="hr-class-1">
+        <p class="connect-line-code"> or connect with</p>
+        <hr class="hr-class-2">
+        <a href="#">
+            <i class="windows-1"></i>
+            <i class="windows-2"></i>
+            <i class="windows-3"></i>
+            <i class="windows-4"></i>
+        </a>
+        <a href="#"> <img class="facebook-icon" src="fb.jpg" alt=""></a>
+        <a href="#"><img class="google-icon" src="google.jpg" alt=""></a>
+        <a href="#"><img class="linkdn-icon" src="linkdn.jpg" alt=""></a>
+        <p class="already-accnt">Already have an Account? &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Login</p>
+        <p class="login-css">Already have an Account? <a href='#' onClick="hide()"> <span
+                    style="color: #0075ff;">Login</span></a></p>
+        <p class="signup-css">Dont have an Account? <a href='#' onClick="hide2()"><span
+                    style="color: #0075ff;">Signup</span></a> </p>
+        <input type="image" class="eye-css-1" src="eye.jpg" />
+        <input type="image" class="eye-css-2" src="eye.jpg" />
+
+
+    </div>
+
+    <script>
+        function hide() {
+            document.getElementsByClassName('hide')[0].
+                style.visibility = 'hidden';
+            document.getElementsByClassName('hide2')[0].
+                style.visibility = 'hidden';
+            document.getElementsByClassName('eye-css-2')[0].
+                style.visibility = 'hidden';
+            document.getElementsByClassName('button')[0].
+                style.top = '340px';
+            document.getElementsByClassName('login-css')[0].
+                style.display = 'none';
+            document.getElementsByClassName('signup-css')[0].
+                style.display = 'block';
+            document.getElementsByClassName('caption')[0].
+                innerHTML = 'Login';
+            document.getElementsByClassName('button')[0].
+                innerHTML = 'Login';
+
+        }
+        function hide2() {
+            document.getElementsByClassName('hide')[0].
+                style.visibility = 'visible';
+            document.getElementsByClassName('hide2')[0].
+                style.visibility = 'visible';
+            document.getElementsByClassName('eye-css-2')[0].
+                style.visibility = 'visible';
+            document.getElementsByClassName('button')[0].
+                style.top = '400px';
+            document.getElementsByClassName('login-css')[0].
+                style.display = 'block';
+            document.getElementsByClassName('signup-css')[0].
+                style.display = 'none';
+            document.getElementsByClassName('caption')[0].
+                innerHTML = 'Sign Up';
+            document.getElementsByClassName('button')[0].
+                innerHTML = 'Sign Up';
+        }
+    </script>
+
+
+</body>
+
+</html>
